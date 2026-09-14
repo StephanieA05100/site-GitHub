@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>TP 2SB2 partie théorique</title>
+  <link rel="stylesheet" href="../../site.css">
+  <style>body{background-color:#F5DA81}</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+ 
+ 
+ <body>
+ <h1>TP 2SB2 – Simulation de réseaux avec le logiciel Filius - Partie Théorique : adresses IP v4 et routage</br>
+ Stéphanie Ader</br>
+ Lycée de la Plaine de l'Ain</h1>
+ 
+ 
+ <div>
+	<br/>
+	<p>Cette partie est inspirée de pixees.fr, qui est un site dédié à l'enseignement des sciences du numérique.</p>	
+	
+	<h2>Généralités</h2>
+	<p>Internet est un « réseau de réseaux », les données y sont transférées d'une machine à une autre sous forme de paquet de données. 
+	Nous verrons ici comment ces paquets de données trouvent leur chemin entre deux ordinateur.<br/>
+	Voici la représentation d’un « mini internet simplifié » :<br/>
+	<center><img src="Images/Reseau complet.png" / height=600><br/></center>
+	</p>
+	<p>Nous avons sur ce schéma les éléments suivants :<br/>
+		<ul>
+		<li>15 ordinateurs : M1 à M15</li>
+		<li>6 switchs (ou commutateurs) : R1 à R6</li>
+		<li>8 routeurs : A, B, C, D, E, F, G et H</li>
+		</ul>
+	</p>
+	<p>Nous avons 6 réseaux locaux, chaque réseau local possède son propre switch (dans la réalité, un réseau local est souvent composé 
+	de plusieurs switchs si le nombre d’ordinateurs appartenant à ce réseau devient important).<br/>
+	Les ordinateurs M1, M2 et M3 appartiennent au réseau local 1.<br/>
+	Les ordinateurs M4, M5 et M6 appartiennent au réseau local 2. <br/>
+	</p>
+	<p class="rouge"><i>Question 1 : Quelles sont les machines qui sont sur le réseau local 3 ?</i></p>
+	
+	<p>Voici quelques exemples de communications entre 2 ordinateurs :</p>
+	<p><strong>Cas n°1 : M1 veut communiquer avec M3</strong>
+	Le paquet est envoyé de M1 vers le switch R1, R1 "constate" que M3 se trouve bien dans le réseau local 1, le paquet est donc envoyé 
+	directement vers M3. On peut résumer le trajet du paquet par :<br/>
+	M1→R1→M3</p>
+	
+	<p><strong>Cas n°2 : M1 veut communiquer avec M6</strong>
+	Le paquet est envoyé de M1 vers le switch R1, R1 « constate » que M6 n’est pas sur le réseau local 1, R1 envoie donc le paquet vers 
+	le routeur A. Le routeur A n'est pas connecté directement au réseau localR2 (réseau local de la machine M6), mais il "sait" que le 
+	routeur B est connecté au réseau local 2. Le routeur A envoie le paquet vers le routeur B. Le routeur B est connecté au réseau local 2, 
+	il envoie le paquet au Switch R2. Le Switch R2 envoie le paquet à la machine M6.<br/>
+	M1 → R1→ Routeur A → Routeur B → R2 → M6</p>
+	
+	<p><strong>Cas n°3 : M1 veut communiquer avec M9</strong>
+	M1 → R1 → Routeur A → Routeur B → Routeur D → Routeur E → R4 → M9<br/>
+	ou encore : <br/>
+	M1 → R1 → Routeur A → Routeur H → Routeur F → Routeur E → R4 → M9<br/>
+	Il est très important de bien comprendre qu’il existe souvent plusieurs chemins possibles pour relier 2 ordinateurs.
+	</p>
+	
+	<p class="rouge"><i>Question 2 : Déterminer un chemin possible permettant d’établir une connexion entre la machine M4 et M14.</i></p>
+	
+	<p>Comment les switchs ou les routeurs procèdent-ils pour amener les paquets à bon port ?<br/>
+	Sans entrer dans les détails, car cela dépasse notre objectif, vous devez tout de même savoir qu’ils utilisent les adresses IP des 
+	ordinateurs. Une adresse IP est de la forme a.b.c.d (exemple : 192.168.221.9). Une partie de l’adresse IP permet d’identifier le 
+	réseau auquel appartient la machine et l’autre partie de l’adresse IP permet d’identifier la machine sur ce réseau.</p>
+	
+	<p>Exemple : Soit un ordinateur M4 ayant pour adresse IP 192.168.2.1, dans cette adresse :</br>
+	<ul>
+	<li>IP "192.168.2" permet d’identifier le réseau (on dit que la machine M4 appartient au réseau ayant pour adresse 192.168.2.0)</li>
+	<li>"1" permet d’identifier la machine sur le réseau (plus précisément sur le réseau 192.168.2.0).</li>
+	</ul>
+	</p>
+	
+	<p>M4, M5 et M6 sont sur le même réseau, l’adresse IP de M5 devra donc commencer par "192.168.2" (adresse IP possible pour M5 : 
+	192.168.2.2). En revanche M7 n’est pas sur le même réseau que M4, M5 et M6, la partie réseau de son adresse IP ne pourra pas être 
+	"192.168.2" (IP possible pour M7 : 192.168.3.1).<br/>
+	En analysant la partie réseau des adresses IP des machines souhaitant rentrer en communication, les switchs et les routeurs sont 
+	capables d’aiguiller un paquet dans la bonne direction.<br/>
+	Par exemple, si le switch R2 reçoit un paquet qui est destiné à l’ordinateur M7 
+	(adresse IP de M7 : 192.168.3.1). R2 "constate" que M7 n’est pas sur le même réseau que lui (R2 appartient au réseau d’adresse 192.168.2.0
+	alors que M7 appartient au réseau d’adresse 192.168.3.0), il envoie donc le paquet vers le routeur B.
+	</p>
+	
+	<p class="rouge"><i>Question 3 : En partant des exemples ci-dessus, donnez une adresse IP possible pour les ordinateurs suivants : 
+	M1 (en partant du principe que l'adresse de M2 est 192.168.1.3), M6 (en partant du principe que l'adresse de M4 est 192.168.2.1) et 
+	M8 (en partant du principe que l'adresse de M7 est 192.168.3.1).</i></p>
+	
+	
+ </div>
+ </body>
+</html>

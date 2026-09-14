@@ -1,0 +1,9 @@
+Aide pour creer une balise cliquable qui renvoie (par exemple) en haut de page.
+
+En haut de page (la ou vous voulez que le lien vous renvoie) : 
+<a id="haut"></a>
+
+En bas de page (la ou vous voulez avoir le renvoi) : 
+<a href="#haut">haut de page</a>
+
+Vous pouvez evidemment changer le texte, le nom de la balise (pour en mettre plusieurs), sa mise en forme ...

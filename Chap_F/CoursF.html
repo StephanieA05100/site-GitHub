@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Cours réseaux sociaux</title>
+  <link rel="stylesheet" href="../site.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+ 
+ 
+ <body>
+ <a id="hautpage"></a>
+<p><center>TP Sciences Numériques et Technologie</br>
+ Stéphanie Ader</br>
+ Lycée de la Plaine de l'Ain</center> </p>
+<h1>Chapitre F : Les réseaux sociaux</h1>
+<h1>Cours</h1>
+<p><a href="../index.html" >Retour à l'accueil</a></p>
+
+<div class="grid-container-cours">
+
+	<div class="grid-item-cours"><a href="#test"><p>TESTER SES CONNAISSANCES</p></a></div>
+	<div class="grid-item-cours"><a href="#hist"><p>1. INTRODUCTION – GENERALITES</p>
+	<p>Historique<br/>
+		Définition<br/>
+		Quelques chiffres<br/>
+		Réseaux sociaux : comment sommes nous connectés ?<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#gra"><p>2. RESEAUX SOCIAUX ET GRAPHES</p>
+		<p>Intérêt des graphes<br/>
+		Exemples<br/>
+		Vocabulaire des graphes<br/>
+		Applications<br/>
+		« Petit monde »<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#algo"><p>3. ALGORITHMES DES RESEAUX SOCIAUX</p>
+		<p>Définition<br/>
+		Exemples<br/>
+		Activité bulles de filtrage<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#eco"><p>4. MODELE ECONOMIQUE DES RESEAUX SOCIAUX</p>
+		<p>Revenus de Facebook<br/>
+		La publicité<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#page"><p>5. CYBERVIOLENCE</p>
+		<p>Activité<br/>
+		Délit et peine
+		</p></a></div>
+</div>
+
+<br/><br/><a id="test"></a><h2>TESTER SES CONNAISSANCES</h2>
+<p>Lien vers "Tester ses connaissances" du manuel Delagrave : <a href="http://lienmini.fr/3389-602" target="_blank">lien</a></p>
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="hist"></a><h2>1. INTRODUCTION – GENERALITES</h2>
+<h3>Historique</h3>
+<p>Vidéo Delagrave P128-129 : histoire du Web<br/>
+ <iframe  width="425" height="344" src="http://lienmini.fr/3389-603" frameborder="0" autoplay muted ="1" allowfullscreen ></iframe></p>
+<p>Evolution des fonctionnalités des réseaux sociaux :<br/>
+<img src="Image1.png" height=300px><br/>
+<i>Source manuel Delagrave</i></p>
+
+<br/><h3>Définition</h3>
+<p>Un <strong>réseau social</strong> est une plateforme Web permettant de connecter virtuellement les internaites entre eux sur divers supports</p>
+
+<br/><h3>Quelques chiffres (2024)</h3>
+<p><li>5,24 milliards d’utilisateurs actifs peuplent les réseaux sociaux, soit 63,9 % de la population mondiale</li>
+<li>Les usagers d’internet âgés de 16 et plus passent en moyenne 2h21min par jour sur les réseaux sociaux</li>
+<li>En moyenne, les utilisateurs de réseaux sociaux possèdent 6,8 comptes sur les différentes plateformes</li>
+<li>Plus de 35,3 % du temps total passé sur Internet l’est sur les réseaux sociaux.</li></p>
+<p><i>Source : <a href="https://www.blogdumoderateur.com/chiffres-reseaux-sociaux/" target="blank">Blog du modérateur</a></i></p>
+<p><img src="https://www.tiz.fr/app/uploads/2024/02/2024_Classement_utilisateurs_RS.jpg" height=400px></p>
+
+<br/><h3>Réseaux sociaux : comment sommes nous connectés ?</h3>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/UX7YQ6m2r_o?si=DzDOwcqL2VQls0Np" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="gra"></a><h2>2. RESEAUX SOCIAUX ET GRAPHES<br/><i>Source : pixees.fr</i></h2>
+<p><img src="https://master-iesc-angers.com/wp-content/uploads/2014/06/01_pdffrance_carte_degres-1024x811.png" height=350px></p>
+
+<h3>Intérêt des graphes</h3>
+<p><img src="Image2.png" height=450px><br/>
+<i>Source manuel Delagrave</i></p>
+
+
+<br/><h3>Exemples</h3>
+<p><u>Exemple 1</u></p><img src="Image3.png" height=250px class="imageflottante">
+<p>On considère un réseau social ayant 6 abonnés (A, B, C, D, E, F) où : 
+	<ul>
+	<li>A est ami avec B, C et D</li>
+	<li>B est ami avec A et D </li>
+	<li>C est ami avec A, E et D </li>
+	<li>D est ami avec tous les autres abonnés </li>
+	<li>E est ami avec C, D et F </li>
+	<li>F est ami avec E et D </li>
+	</ul></p>
+<p>On schématise ce réseaux social par le graphe ci-contre :</p>
+
+<p><u>Exemple 2</u></p>
+<p>Construisez un graphe de réseau social à partir des informations suivantes : 
+	<ul>
+	<li>Nathan est ami avec Mohamed et Jean</li> 
+	<li>Mohamed est ami avec Nathan et Jean </li>
+	<li>Jean est ami avec Mohamed, Nathan, Yasmine et Lisa</li> 
+	<li>Lisa est amie avec Jean, Tony et Arnaud</li>
+	<li>Tony est ami avec Lisa</li>
+	<li>Arnaud est ami avec Lisa</li>
+	<li>Yasmine est amie avec Jean</li>
+	</ul></p>
+
+<br/><h3>Vocabulaire des graphes</h3><img src="Image3.png" height=250px class="imageflottante">
+<p><strong>Chaîne</strong> : Dans un graphe, une chaîne reliant un sommet x à un sommet y est définie par une suite finie d'arêtes consécutives, reliant x à y. <br/>
+<ul>exemple : dans le graphe ci-contre, A-D-E-C est une chaîne</ul></p>
+<p><strong>Distance entre 2 sommets</strong> : La distance entre deux sommets d'un graphe est le nombre minimum d'arêtes d'une chaîne allant de l'un à l'autre. <br/>
+<ul>exemple : la distance entre le sommet A et le sommet F est de 2 (chaîne A-D-F). </ul></p>
+<p><strong>Excentricité</strong> : L'excentricité d'un sommet est la distance maximale existant entre ce sommet et les autres sommets du graphe. <br/>
+<ul>exemple : distance (A-B) = 1 ; distance (A-C) = 1 ; distance (A-D) = 1 ; distance (A-E) = 2 ; distance (A-F) = 2 ; nous pouvons donc dire que l'excentricité 
+de A est de 2. </ul></p>
+<p><strong>Centre</strong> : On appelle centre d'un graphe, le sommet d'excentricité minimale (le centre n'est pas nécessairement unique).  <br/>
+<ul>exemple : dans le graphe ci-contre tous les sommets ont une excentricité de 2 à l'exception du sommet D qui a une excentricité de 1, nous pouvons donc affirmer 
+que le centre du graphe 1 est le sommet D </ul></p>
+<p><strong>Rayon</strong> : On appelle rayon d'un graphe G, l'excentricité d'un centre de G.<br/>
+<ul>exemple : D a une excentricité de 1, c'est le centre du graphe 1, nous pouvons donc dire que le rayon du graphe 1 est de 1. </ul></p>
+<p><strong>Diamètre</strong> : On appelle diamètre d'un graphe G, la distance maximale entre deux sommets du graphe G. <br/>
+<ul>exemple : dans le graphe 1 la distance maximale entre 2 sommets est de 2, nous pouvons donc dire que le diamètre du graphe est de 2. </ul></p>
+
+<br/><h3>Applications</h3>
+<p><u>Application 1</u></p><img src="Image4.png" height=250px class="imageflottante">
+<p>Sur le graphe ci-contre :<br/>
+1. citer une chaîne reliant Nathan et Arnaud<br/>
+2. déterminer la distance entre Mohamed et Yasmine<br/>
+3. déterminer l’excentricité des sommets Tony et Jean<br/>
+4. déterminer  le(s) centre(s)<br/>
+5. déterminer le rayon du graphe<br/>
+6. déterminer le diamètre du graphe<br/></p>
+
+<p><u>Application 2</u></p>
+<p><img src="Image5.png" height=400px></p>
+
+<p><u>Application 3</u></p>
+<p>Activité livre scolaire P 92 : Projet 1 - construire un graphe <a href="https://www.lelivrescolaire.fr/page/30675196" target="blank">Lien</a> </p>
+
+
+<br/><h3>« Petit monde »</h3>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/gOiIQ0qGiCc?si=4iQnmXmIv39L-Zn1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+<p>Question : Si on considère le monde comme un graphe où chaque personne est un sommet du graphe et chaque relation (A "connait" B) est une arête du graphe, 
+quelle est l'excentricité d'un sommet quelconque d'après la théorie de Milgram ? Cette valeur de l'écartement a-t-elle évolué avec l'arrivée des réseaux sociaux ? </p>
+<p><li>1967: expérience de Milgram --> toute personne peut être reliée à n’importe quelle autre par une courte chaîne de relations sociales.</li>
+<li>2015 : hypothèse démontrée par un jeu télévisé suédois : donne pour mission à ses participants de serrer fictivement la main de l’américain Buzz Aldrin, 2ème homme 
+à avoir marché sur la lune, en passant aux max par <strong>6</strong> relations intermédiaires. Les participants y sont parvenus !</li>
+<li>1998 : étude de l’université de Cornell sur la messagerie Microsoft (240 millions d’utilisateurs )--> degré de séparation moyen de <strong>6,6</strong>.</li>
+<li>2011 : Facebook évalue ce degré à <strong>4,74</strong> (720 millions d’utilisateurs)</li>
+<li>En 2016, une mise à jour a révélé que ce chiffre était descendu à <strong>3,57</strong>.</li></p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="algo"></a><h2>3. ALGORITHMES DES RESEAUX SOCIAUX</h2>
+<h3>Exemples</h3>
+<p><i>Source : <a href="https://www.blogdumoderateur.com/tout-savoir-sur-algorithmes-reseaux-sociaux/" target="blank">Blog du modérateur</a></i></p>
+<p>Tous les réseaux sociaux sont dotés d’un algorithme, qui a pour fonction de classer les contenus selon un ensemble de règles. Cet algorithme a un impact 
+majeur sur le temps passé par les internautes sur le réseau social et joue donc un rôle essentiel dans sa réussite. </p>
+<p><img src="Image6.png" height=400px></p>
+
+<br/><h3>Activité bulles de filtrage</h3>
+<p>Activité 2SF1</p>
+
+
+<p><a href="#hautpage" >Haut de page</a></p> 
+
+
+<br/><br/><a id="eco"></a><h2>4. MODELE ECONOMIQUE DES RESEAUX SOCIAUX</h2>
+<h3>Revenus de Facebook</h3>
+<p><img src="Image7.png" height=350px></p>
+
+<br/><h3>La publicité</h3>
+<p><img src="https://balises.bpi.fr/content/uploads/sites/4/2023/07/statista-2-1.jpeg" height=400px></p>
+<p><img src="Image8.png" height=350px><br/>
+<i>Source manuel Nathan</i></p>
+<p><img src="Image9.png" height=350px><br/>
+<i>Source manuel Nathan</i></p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+
+<br/><br/><a id="page"></a><h2>5. CYBERVIOLENCE</h2>
+<h3>Activité</h3>
+<p>Activité 1SF2
+Hachette P 52/53 en classe en groupes
+</p>
+
+<br/><h3>Délit et peine</h3>
+<p>L'article 22-33-2-2 du code pénal prévoit que : "Le fait de harceler une personne par des propos ou comportements répétés ayant pour objet ou 
+pour effet une dégradation de ses conditions de vie se traduisant par une altération de sa santé physique ou mentale est puni d'un an 
+d'emprisonnement et de 15 000 € d'amende." </p>
+<p>Mise à jour :<br/>
+<img src="https://i.pinimg.com/originals/90/e3/27/90e32702f2159aa126236eb4fd05eedb.jpg" height=300px></p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
+ </body>
+</html>

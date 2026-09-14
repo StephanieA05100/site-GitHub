@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>TP 2SA3</title>
+  <link rel="stylesheet" href="../../site.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+ 
+ 
+ <body>
+ <h1>TP 2SA3 – Tableaux et graphiques sur tableur – Titanic</br>
+ Stéphanie Ader</br>
+ Lycée de la Plaine de l'Ain</h1>
+ 
+ 
+ <div>
+	<p><img src="titanic.jpg" class="centrer" / height=500 >
+	<h4>Source de l'image : histmag.org</h4>
+	
+	<br/>
+	<p>Le fichier titanic.csv comporte les données de 1309 des 1317 passagers du Titanic, paquebot ayant fait naufrage en 1912 (source : kaggle.com). 
+	Nous allons exploiter les données de ce fichier à l’aide d’un tableur.</p>
+	
+	<br/>	
+	<h2>Chargement du fichier, enregistrement et ouverture</h2>
+	<p> 1) Charger le fichier ci-dessous en suivant le lien : <a href="titanic.csv" target="_blank">Fichier Titanic </a> <br/> </p>
+	<p> 2) Enregistrer le fichier dans vos documents - <span class="rouge">NE PAS L'OUVRIR à ce stade ! </span></p>
+	<p> 3) Ouvrir ce fichier dans un tableur (Libreoffice Calc) en faisant clic droit "ouvrir avec". <span class="rouge">IMPORTANT : à l'ouverture, décocher "virgule"</span>
+		<a href="Aide ouverture.jpg" target="_blank">Aide </a> </p>
+	
+	<br/>	
+	<h2>Ouverture du questionnaire en ligne</h2>
+	<p> Au cours du TP, vous devrez répondre à certaines questions, les réponses sont à renseigner sur un questionnaire en ligne</p>
+	<p> 1) Suivre le lien pour ouvrir le questionnaire en ligne : <a href="https://framaforms.org/tp-2sa3-les-passagers-du-titanic-1629560829" target="_blank"> Questionnaire </a> </p>
+	<p> 2) Répondre aux questions Q1 à Q3 <br/>
+		Prenez garde à ne pas fermer l'onglet du questionnaire en cours de séance, puis pensez à le soumettre avant de fermer le navigateur. </p>	
+	
+	<br/>	
+	<h2>Premières formules</h2>
+	<p>Le prix d'un billet se dit "fare" en anglais</p>
+	<p> 1) Déterminer le prix moyen d'un billet, le prix max et le prix min en utilisant les formules "moyenne", "max" et "min" dans le tableur 
+		<a href="Aide moyenne.jpg" target="_blank">Aide </a></br>
+		Rappel: pour utiliser une formule, commencer toujours par = <br/>
+		Nota pour gagner du temps : après avoir sélectionné les cellules à la souris une première fois, retenez le n° de la plus grande ligne pour taper directement 
+		les formules sans passer par la souris !</p>
+	<p> 2) Répondre aux questions Q4 à Q7 du questionnaire en ligne. </p>	
+	
+	<br/>	
+	<h2>Filtrage des données</h2>
+	<p> Nous allons activer le filtrage des données. <br/>
+		Pour cela, sélectionner la première ligne entièrement (en cliquant sur le numéro de la ligne tout à gauche), 
+		puis cliquer sur Données / Autofiltre : une flèche apparaît dans chaque cellule de la ligne 1 <br/>
+		<img src="Autofiltre.jpg" / height=70 ></p>
+	<p> 1) En utilisant le filtre dans la colonne « age », ne conserver que les passagers ayant 18 ans : combien étaient ils ? </p>
+	<p> 2) En ajoutant un filtre dans la colonne "survived", déterminer le nombre de passagers de 18 ans ayant survécu. </p>
+	<p> 3) Réinitialiser les filtres et répondre aux questions Q8 et Q9 du questionnaire en ligne.</p>
+	
+	<br/>	
+	<h2>Un autre filtrage de données</h2>
+	<p> 1) En utilisant des filtres appropriés, déterminer, parmi les femmes (sex=2) de 1ère classe, le nombre de survivantes puis le nombre de mortes.<br/>
+		Quelle était la probabilité de survivre, pour une femme de première classe ? </br>
+	<p> 2) Déterminer, parmi les femmes de 3ème classe, le nombre de survivantes puis le nombre de mortes.<br/>
+		Quelle était la probabilité de survivre, pour une femme de troisième classe ? </br>
+	<p> 3) Répondre aux questions Q10 à Q12 du questionnaire en ligne.</p>
+	
+	<br/>
+	<h2>Tri des données</h2>
+	<p> On peut trier des données en utilisant le filtre automatique implanté précédemment.</p>
+	<p> 1) Dans la colonne "fare", sélectionner "tri décroissant".<br/>
+		--> Les passagers sont maintenant classés en fonction du prix qu'ils ont payé.</p>
+	<p> 2) Parmi les 84 passagers ayant payé 100$ ou plus, combien ont survécu ?<br/>
+		Quel pourcentage cela représente-t-il ?</p>
+	<p> 3) Parmi les 105 passagers ayant payé 7$ ou moins, combien ont survécu ? - ne prenez pas en compte les passagers pour lesquels le tarif n'est pas renseigné<br/>
+		Quel pourcentage cela représente-t-il ?</p>
+	<p> 4) Répondre aux questions Q13 à Q15 du questionnaire en ligne, puis soumettre le questionnaire.</p>
+	
+ </div>
+ </body>
+</html>

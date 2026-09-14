@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Cours données structurées</title>
+  <link rel="stylesheet" href="../site.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+ 
+ 
+ <body>
+ <a id="hautpage"></a>
+<p><center>TP Sciences Numériques et Technologie</br>
+ Stéphanie Ader</br>
+ Lycée de la Plaine de l'Ain</center> </p>
+<h1>Chapitre A : Les données structurées</h1>
+<h1>Cours</h1>
+<p><a href="../index.html" >Retour à l'accueil</a></p>
+
+<div class="grid-container-cours">
+
+	<div class="grid-item-cours"><a href="#test"><p>TESTER SES CONNAISSANCES</p></div></a>
+	<div class="grid-item-cours"><a href="#don"><p>1. LES DONNEES</p> 
+		<p>Définition<br/>
+		Historique<br/>
+		Le Big Data<br/>
+		Les formats de données
+		Opendata<<br/>
+		Les métadonnées<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#ds"><p>2. LES DONNEES STRUCTUREES </p>
+		<p>Définition<br/>
+		Les bases de données<br/>
+		Opérations sur les données<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#pers"><p>3. LES DONNEES PERSONNELLES </p>
+		<p>Définition<br/>
+		La collecte des données personnelles<br/>
+		La protection des données personnelles<br/>
+		Le marché des données personnelles<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#sto"><p>4. LE STOCKAGE DES DONNEES </p>
+		<p>le cloud<br/>
+		Les acteurs du cloud<br/>
+		Les Data Centers<br/>
+		</p></a></div>
+</div>
+
+<br/><br/><a id="test"></a><h2>TESTER SES CONNAISSANCES</h2>
+<p>Lien vers "Tester ses connaissances" du manuel Delagrave : <a href="http://lienmini.fr/3389-102" target="_blank">lien</a></p>
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="don"></a><h2>1. LES DONNEES</h2>
+<h3>Définition</h3>
+<p>Une <strong>donnée</strong> est une valeur ou un ensemble de valeurs pouvant prendre plusieurs formes (nombre, chaîne de caractères …) 
+et permettant de décrire un ou plusieurs objets.<br/>
+Exemple : pour un élève de votre classe, l’âge est une donnée, le prénom, la photo …</p>
+<p><div class="rouge"><center>Les données constituent la matière première de toute activité numérique.</center></div></p>
+<p>Afin de permettre leur utilisation, il est nécessaire de :
+<ul>
+<li>Les conserver de manière persistante.</li>
+<li>Les structurer correctement pour que l'on puisse les exploiter facilement pour produire de l'information.</li></ul></p>
+
+<br/><h3>Historique</h3>
+<p>Vidéo Delagrave P14-15 : histoire des données structurées<br/>
+ <iframe  width="425" height="344" src="http://lienmini.fr/3389-103" frameborder="0" autoplay muted ="1" allowfullscreen ></iframe></p>
+
+<br/><h3>Le Big Data</h3>
+<p>Le Big Data est l’ensemble des données numériques produites par l’utilisation des nouvelles technologies ou l’échange d’informations.</p>
+<p>Quelques faits impressionnants sur le Big Data – source lebigdata.fr :
+<ul>
+<li>1,7 megaoctets de données créés chaque seconde par chaque personne en 2024</li>
+<li>463 exaoctets sont créées par jour (source findstack.fr), soit 1.000.000.000.000.000 octets</li>
+<li>Pour télécharger l’intégralité des données présentes sur Internet, il faudrait plus de 180 millions d’années à un individu.</li>
+<li>Le volume de données mondiales double tous les trois ans</li>
+<li>90% des données mondiales ont été créées au cours des dix dernières années – info 2021</li>
+<li>6 millions de développeurs travaillent sur des outils Big Data</li></ul></p>
+
+<p><img src="https://cdn.statcdn.com/Infographic/images/normal/17800.jpeg" height=350px>&nbsp;&nbsp;&nbsp<img src="Image15.jpg" height=350px><br/>
+<img src="https://cdn.statcdn.com/Infographic/images/normal/17793.jpeg" height=450px></p>
+
+<p>En quoi le Big Data améliore-t-il nos vies quotidiennes ?<i> Source : </i><a href="https://www.vouchercloud.fr/ressources/big-data-infographie" target="_blank">vouchercould.fr</a>
+<ul>
+<li>Soins médicaux : prévoir les pics de maladies, identifier les personnes à risque</li>
+<li>Santé : suivi actif ou passif</li>
+<li>Transports urbains : systèmes GPS pour suivre les transports publics</li>
+<li>Gestion des déchets : capteurs dans les containeurs, historique de l’utilisation</li>
+<li>Pompiers : systèmes de surveillance, géolocalisation des véhicules d’urgence, détecteurs de fumée</li>
+<li>Prévision et compréhension du crime : analyse des zones notamment</li>
+<li>…</li></ul></p>
+
+<br/><h3>Le Big Data – les 3V</h3>
+<p>Le Big Data répond à 3 principes, résumés par les « trois V » de l’analyste Doug Laney :
+<ul>
+<li>Le Volume de données </li>
+<li>La Variété des données </li>
+<li>La Vélocité </li>
+</ul>
+</p>
+<p>On y ajoute maintenant : 
+<ul>
+<li>La Véracité : la qualité des analyses se fait à partir de la qualité de la donnée. </li>
+<li>La Variabilité : les données évoluent dans le temps. Leur qualité peut se détériorer. </li>
+<li>La Valeur </li>
+</ul>
+</p>
+
+<br/><h3>Les formats de données</h3>
+<p>Le format des données correspond à la manière dont celles-ci sont codées.</p>
+<img src="Image2.png" height=350px></p>
+
+<br/><h3>L’Open Data</h3>
+<p>Les Open Data, ou données ouvertes, sont des données auxquelles l’accès est totalement public et libre de droit, de même que leur exploitation ou leur réutilisation.</p>
+<p>Exemple d’Open Data : <a href="http://www.data.gouv.fr/fr/" target="_blank">data.gouv.fr</a></p>
+
+<br/><h3>Les métadonnées</h3>
+<p>Les métadonnées d’un fichier sont un ensemble de données décrivant les caractéristiques d’un fichier, sans être spécifiquement liées à son contenu. <br/>
+Ce sont donc les informations qui décrivent un fichier.<br/>
+Par exemple : nom, date de création, format, créateur …</p>
+<p>Exemple :<br/>
+<img src="PXL_20210523_141945598.jpg" height=200px></p>
+
+<br/><h3>Le code ASCII</h3>
+<p>Pour stocker les caractères, on associe un code binaire à chaque caractère.<br/>
+Historiquement, une des premières méthodes de codage des caractères est appelée ASCII (American Standard Code for Information Interchange )<br/>
+<img src="Image3.jpg" height=250px></p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="ds"></a><h2>2. LES DONNEES STRUCTUREES</h2>
+<h3>Définition</h3>
+<p>Les données structurées sont des données regroupées et stockées sous la forme d’une table regroupant de multiples objets selon un ou plusieurs descripteurs.<br/>
+<img src="Image3.png" height=300px></p>
+ 
+ <br/><h3>Pourquoi structurer ces données ?</h3>
+ <p>Vidéo INRIA : Données, comment les manipuler ?<br/>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/IJJgcZ2DEs0?si=kfOARW1mmdI7jTH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ </p>
+ 
+<br/><h3>Les bases de données</h3>
+<p>Une base de données est une entité stockant des données structurées et permettant leur traitement à l’aide d’algorithmes.</p>
+<p>Vidéo Delagrave P18 : l'histoire des bases de données<br/>
+<iframe  width="425" height="344" src="http://lienmini.fr/3389-105" frameborder="0" autoplay muted ="1" allowfullscreen ></iframe></p>
+<p>Les formats des bases de données : <br/>
+Exemples de formats : tableur (Excel, Libreoffice calc ...) ; CSV ; JSON<br/>
+<center><img src="Image4b.png" height=200px>  <img src="Image5b.png" height=200px>  <img src="Image6b.png" height=200px><br/>
+<img src="Image7.png"></center>
+</p>
+
+<br/><h3>Opérations sur les données</h3>
+<p>A l’aide d’un tableur, on peut faire des opérations sur les données : les trier, les filtrer …<br/>
+<i>TP 2SA3 sur les tableurs</i></p>
+<p>Avec Python on peut traiter des données au format csv ou au format JSON.<br/>
+<i>Activité du manuel Le Livre Scolaire</i></p>
+<p>Requête SQL : une requête permet d’extraire des informations d’une base de données<br/>
+<img src="Image14.png" height=300px><br/>
+<i>Activité Capytale sur le SQL</i></p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="pers"></a><h2>3. LES DONNEES PERSONNELLES</h2>
+<h3>Définition de la CNIL :</h3>
+<p>Une donnée personnelle est toute information se rapportant à une personne physique identifiée ou identifiable. Une personne physique peut être identifiée :
+	<ul>
+	<li>directement (exemple : nom et prénom) ;</li>
+	<li>indirectement (exemple : par un numéro de téléphone ou de plaque d’immatriculation, un identifiant tel que le numéro de 
+	sécurité sociale, une adresse postale ou courriel, mais aussi la voix ou l’image).</li>
+	</ul>
+	</p>
+<p>L’identification d’une personne physique peut être réalisée :
+	<ul>
+	<li>à partir d’une seule donnée (exempleC: nom) ;</li>
+	<li>à partir du croisement d’un ensemble de données (exemple : une femme vivant à telle adresse, née tel jour et membre dans telle association).</li>
+	</ul>
+	</p>
+
+<br/><h3>La collecte des données personnelles</h3>
+<p><u>La collecte légale</u> : Extrait de l’article « Nos données personnelles : un marché convoité » - CS Science – Mai 2021 :<br/>
+«  Mais que contiennent ces fameuses données personnelles ? À peu près tout ! De notre géolocalisation aux coordonnées bancaires, 
+en passant par les pages web consultées, nos achats en ligne, nos « likes » sur les réseaux sociaux, les vidéos regardées et tutti quanti. 
+Il y a aussi les « moments de vie » – naissance, mariage, déménagement, etc. – lesquels génèrent des besoins dans notre vie de consommateur et 
+donnent une grande valeur à nos données dans une optique de marketing et de fidélisation. »</p>
+<p><u>La collecte illégale : le hacking</u><br/>
+Vidéos Hack Academy<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RupAsjOSuOc?si=rES283K2m66qSPVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ytUhNkPWHqw?si=lmaNVGRhwSMM-fsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+
+<br/><h3>La protection des données personnelles</h3>
+<p>Tous les états membres de l’UE sont dotés d’une loi informatique et libertés et d’une autorité nationale de protection des données.</p>
+<p>Les données sont protégées par :
+	<ul>
+	<li>La loi informatique, fichiers et libertés</li>
+	<li>Le RGPD, Règlement Général sur la Protection des Données entré en vigueur en mai 2018</li>
+	</ul>
+	</p>
+<p>En France, l’autorité compétente est la CNIL (Commission Nationale de l’Informatique et des Libertés), créée en 1978.</p>
+<p>Vidéo Le Monde sur le RGPD<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iMD3pWAFXEY?si=1H-YylHnFUW-xPfr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+
+<br/><h3>Le marché des données personnelles</h3>
+<p>Infographie Le Monde :<br/>
+<img src="Image9.png" height=350px><br/></p>
+<p>Extraits de l’article « Données personnelles : un marché dominé par l’opacité » – La Croix – juin 2022<br/>
+« Difficile à estimer, la valeur du marché des données dans l’Union Européenne pourrait atteindre 105 milliards d’euros d’ici à 2025, 
+selon le cabinet IDC et le laboratoire d’idées The Lisbon Council. Ce marché était estimé à plus de 9 milliards d’euros en France en 2019. »<br/>
+« En 2020, les revenus tirés de la publicité représentaient 98 % des revenus de Facebook et 81 % de ceux de Google, soit un peu plus de 231 
+milliards de dollars pour les deux entreprises, selon la World Federation of Advertisers. »</p>
+<p>Vidéo France Inter sur le marché des données personnelles :<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uCgzD_bb3qA?si=TAZFmKkrZ4B99Tvh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+<p>Vidéo Lunmi : protéger nos données personnelles :<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MXwKr5wGFwU?si=I8mih3SdAiR6dsjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+<p>Vidéo Date Gueule :<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nsit9vbPlk4?si=er-fc2DKdaRl5zNp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="sto"></a><h2>4. LE STOCKAGE DES DONNEES</h2>
+<h3>Le cloud</h3>
+<p>On peut stocker des données localement (clef USB, disque dur, CD …) ou en externe sur un Cloud.<br/>
+Le cloud computing consiste à utiliser un serveur externe pour stocker des données, ou encore utiliser la puissance de celui-ci pour se servir d’un logiciel. 
+A titre d’exemple, si vous avez déjà eu recours à des services tels que Dropbox, Google Drive ou encore l’iCloud d’Apple, alors vous êtes un utilisateur 
+du cloud computing.<br/> 
+Même l’utilisation d’une adresse mail constitue une utilisation du cloud, les données étant sur un serveur et pas chez vous.</p>
+<p>Les avantages du cloud pour les entreprises :
+	<ul>
+	<li>Les données sont accessibles à tous, en temps réel, et dans la dernière version	</li>
+	<li>Pas de perte d’information en cas d’incendie, d’inondation …</li>
+	<li>Les employés peuvent travailler de n’importe où</li>
+	<li>Les données sont mieux sécurisées</li>
+	<li>Les applications sont mises à jour automatiquement</li>
+	<li>Réduire les coûts (moins de matériel)</li>
+	<li>Le service informatique de l’entreprise est allégé</li>
+	</ul>
+	</p>
+<p>Les avantages du cloud pour les particuliers :
+	<ul>
+	<li>Les données peuvent être partagées facilement</li>
+	<li>Pas de perte de donnée en cas de vol, d’incendie …</li>
+	<li>Meilleure sécurité des données</li>
+	<li>Moins de coût de matériel</li>
+	</ul>
+	</p>	
+<p>Les inconvénients du cloud :
+	<ul>
+	<li>Les données hébergées sur des serveurs virtuels sont sous le contrôle du fournisseur de services de cloud computing</li>
+	<li>Si le cloud est détenu par une entreprise US, les données peuvent être saisies dans le cadre de la lutte anti terrorisme</li>
+	<li>Les problèmes techniques peuvent être réglés uniquement par le fournisseur</li>
+	<li>Les services de stockage de données sont des cibles privilégiées pour les hackeurs</li>
+	<li>L’accès aux données ne peut se faire qu’en ligne : pas d’accès en cas de panne de réseau</li>
+	<li>L’accès des données en ligne uniquement engendre une pollution importante</li>
+	</ul>
+	</p>	
+
+<br/><h3>Les acteurs du cloud</h3>
+<p>	<img src="Image16.png" height=350px>
+</p>
+
+<br/><h3>Les data centers</h3>
+<p>En pratique, les données stockées dans le cloud le sont dans des data centers.<br/>
+<center><img src="Image10.png" height=350px><br/>
+<img src="Image13.png" height=200px>  <img src="Image11.png" height=200px>  <img src="Image12.png" height=200px></center>></p>
+<p>Données 2025 : <i>source <a href="https://techjury.net/industry-analysis/how-many-data-centers-are-there/" target="_blank">techjury.net</a> </i>
+	<ul>
+	<li>Environ 12 259 data centers à travers le monde en 2026, dont 4 011 aux États-Unis et 344 en France; Nota : en 2022 il y avait 8 000 data centers.</li>
+	<li>Les data centers utilisaient 2,7% de l'électricité mondiale en 2025</li>
+	<li>Surface moyenne : 9 300 m² ; le plus grand se situe à Hohhot en Chine, pour China Telecom et 
+	couvre une surface de 994 000 m², soit l’équivalent d’un carré de 1 km de côté</li>
+	</ul>
+	</p>
+<p>Répartition des 50 plus grands datacenters en 2023 (source : VisualCapitalist) :<br/>
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitAlmbdCpeoRacHjC-oey1_FCdmbNotxCV5Gj8pRldchNWJpa1Gg2wqaK8KokalvrRdm-bxczx8W5zeetHtK4qKZftQUKRorvok6JnhFCCWGknreTUQgzbvyvPqpnuV1iT6n_mqE8VCNbO5jN_m9hOZarH8-zqKROY1XXR73IVH9r8iK-irwct_9nmcbbA/w640-h454/50-largest-data-centers-1200px.jpg" height=350px>
+</p>
+<p>Répartition des datacenters dans le monde en 2026 (source : https://programs.com) : <br/>
+<img src="Image17.png" height=350px>
+</p>
+<p>Impact environnemental des data centers en France: <i>source <a href="https://ecoresponsable.numerique.gouv.fr/actualites/actualisation-ademe-impact/" target="_blank">Ademe</a></i><br/>
+	<ul>
+	<li>Les données doivent être accessibles en permanence, les serveurs doivent donc être allumés et refroidis 7j/7, 24h/24.</li>
+	<li>Un data center moyen consomme autant d’électricité qu’une ville de 40 000 habitants</li>
+	<li>Le numérique consomme 11 % de la production électrique Française en 2025.</li>
+	<li>Les data centers représentent à eux seuls 2,2 % de la consommation électrique annuelle, soit l’équivalent de l’électricité consommée par 9 à 10 agglomérations de plus de 100 000 habitants pendant un an</li>
+	<li>Si rien n'est fait, la consommation pourrait être multipliée par 3,7 d’ici 2035</li>
+	<li>Les data centers représentent 2% de l’empreinte carbone française en 2022 (46% des 4,4% du numérique).</li>
+	<li>Si rien n'est fait l'Ademe s'attend à un triplement des émissions de gaz à effet de serre d'ici 2050. 
+	Et encore ! l'étude publiée ne comprend pas encore les impats de l'IA générative</li>
+	</ul>
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.agci.org%2Fwp-content%2Fuploads%2F2022%2F07%2F1-1.png&f=1&nofb=1&ipt=5cd736f8d5125ce67f48415691d84528e7f91ec14f0b97a3ebe57065d95b703c" height=350px><br/>
+</p>
+<p>Vidéo Les data centers ces usines a donnees :<br/>
+<iframe width="560" height="315" src="Les data centers ces usines a donnees.mp4" frameborder="0" autoplay muted ="1" allowfullscreen ></iframe>
+</p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
+ </body>
+</html>

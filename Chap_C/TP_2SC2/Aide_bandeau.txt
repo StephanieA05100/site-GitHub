@@ -1,0 +1,16 @@
+Aide pour creer un bandeau de haut de page.
+
+Dans le fichier css on definit le format de l'entete (ou header):
+#header{
+	height:0 auto;
+	text-align: center;
+	background-color:purple;
+	padding:50px
+} 
+Vous pouvez y definir le style de police, la couleur ...
+
+
+Dans le fichier html, la ou vous voulez avoir le bandeau : 
+<div id="header">
+<h1>Presentation du chamois</h1>
+</div>

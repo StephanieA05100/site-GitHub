@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Cours localisation, cartographie, mobilité</title>
+  <link rel="stylesheet" href="../site.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+ 
+ 
+ <body>
+ <a id="hautpage"></a>
+<p><center>TP Sciences Numériques et Technologie</br>
+ Stéphanie Ader</br>
+ Lycée de la Plaine de l'Ain</center> </p>
+<h1>Chapitre E : Localisation, cartographie, mobilité</h1>
+<h1>Cours</h1>
+<p><a href="../index.html" >Retour à l'accueil</a></p>
+
+<div class="grid-container-cours">
+
+	<div class="grid-item-cours"><a href="#test"><p>TESTER SES CONNAISSANCES</p></a></div>
+	<div class="grid-item-cours"><a href="#hist"><p>1. HISTORIQUE</p> </a></div>
+	<div class="grid-item-cours"><a href="#geo"><p>2. GEOLOCALISATION</p>
+		<p>Les coordonnées géographiques<br/>
+		Le principe de la trilatération<br/>
+		Le système GPS<br/>
+		Le système Galileo<br/>
+		La trame NMEA<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#iti"><p>3. ITINERAIRES</p>
+		<p>Les graphes<br/>
+		Algorithme de Dijkstra<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#cart"><p>4. CARTOGRAPHIE</p>
+		<p>OpenStreetMap et Geoportail<br/>
+		Exemples d’applications des cartes numériques<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#page"><p>5. LES ENJEUX DE LA GEOLOCALISATION</p></a></div>	
+</div>
+
+<br/><br/><a id="test"></a><h2>TESTER SES CONNAISSANCES</h2>
+<p>Lien vers "Tester ses connaissances" du manuel Delagrave : <a href="http://lienmini.fr/3389-402" target="_blank">lien</a></p>
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="hist"></a><h2>1. HISTORIQUE</h2>
+<p>Vidéo Delagrave P80-81 : histoire du Web<br/>
+ <iframe  width="425" height="344" src="http://lienmini.fr/3389-403" frameborder="0" autoplay muted ="1" allowfullscreen ></iframe></p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="geo"></a><h2>2. GEOLOCALISATION</h2>
+<h3>Définition</h3>
+<p><img src="Image1.png" height=600px></p>
+
+<br/><h3>Les coordonnées géographiques</h3>
+<p><img src="Image2.png" height=400px></p>
+<p>Placer les villes suivantes selon leurs coordonnées géographiques :
+	<ul>
+	<li>Paris, 34°N, 96°W</li>
+	<li>Uwu, 5°S, 142°E</li>
+	<li>Saint-Elie, 5°S, 53°W</li>
+	<li>Saint-Elie, 46°N, 73°W</li>
+	</ul></p>
+<p>Quelles sont approximativement les coordonnées géographiques de :
+	<ul>
+	<li>LPA</li>
+	<li>Cap de Bonne Espérance</li>
+	<li>Cap Horn</li>
+	<li>Cap Nord</li>
+	</ul></p>
+<img src="Planisphere.gif" height=400px></p>
+<br>
+<h5>LPA 45.96°N, 5.35°E ; Cap de Bonne Espérance 34.3°S, 18.5°E ; Cap Horn 56.0°S, 67.3°W ; Cap Nord 71.3°N, 25.8°E</h5>
+
+<br/><h3>Le principe de la trilatération</h3>
+<p>Vidéo --> 2:42<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WoqpQbWdacQ?si=dzFSYGnXLZvjfrW2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+
+<p><i><strong>Activité fiche <a href="2SE4 - Trilatération.pdf">2SE4</a></strong></i><br/>
+<a href="Correction 2SE4 Charles.ppsx" target="blank">Correction Charles</a><br/>
+<a href="Correction 2SE4 Alice.ppsx" target="blank">Correction Alice</a></p>
+
+<p>La <strong>trilatération</strong> est un type de mesure utilisé pour déterminer l'emplacement d'un point en utilisant la géométrie de sphères, 
+de cercles ou de triangles. Pour déterminer l'emplacement d’un point, la trilatération utilise des mesures de distances.</p>
+<p>A ne pas confondre avec la <strong>triangulation</strong>, méthode mathématique utilisant la géométrie des triangles, et en particulier la mesure des angles.</p>
+<p><img src="Image3.png" height=400px></p>
+<p><img src="Image4.png" height=350px></p>
+
+<br/><h3>Le système GPS</h3>
+<p>Vidéo à partir de 2:42<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WoqpQbWdacQ?si=dzFSYGnXLZvjfrW2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+<p>Différents systèmes GPS :<br/>
+<img src="Image5.png" height=450px>   <img src="https://www.insightsonindia.com/wp-content/uploads/2018/12/BeiDou-Navigation-Satellite-System-BDS.png" height=350px></p>
+
+<br/><h3>Le système Galileo</h3>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/kUouczu8YI8?si=rFwAIQx6jZoFHHnB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+
+<br/><h3>La trame NMEA</h3>
+<p><img src="Image6.png" height=250px><br/>
+<i>Source : Manuel Le Livre Scolaire</i></p>
+<p>La NMEA (National Marine Electronics Association) est une association à but non lucratif qui a pour objectif principal de standardiser la communication 
+entre composants électroniques sur les bateaux.</p>
+<p>L’une de ses normes la plus connue est la trame NMEA 0183. Les données de cette trame sont transmises sous forme d’une chaîne de caractères.</p>
+<p><img src="Image7.png" height=350px><br/>
+<i>Source : Manuel Hatier-Foucher</i></p>
+<p>La trame NMEA 0183 :
+<p><img src="Image8.png" height=450px><br/>
+<i>Source : Manuel Hatier-Foucher</i></p>
+<p>Plus d'info sur <a freh="https://www.prism-astro.com/fr/aide/Menu-Telescope/TELESCOPE-GPS/renseignements.htm" target="bank">prism-astro</a></p>
+
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="iti"></a><h2>3. ITINERAIRES</h2>
+<h3>Les graphes</h3>
+<p>Un réseau de villes et les routes qui les relient peuvent être représentés par un graphe.<br/>
+Les villes ou carrefours sont représentés par des nœuds.<br/>
+Le temps de trajet ou la distance est alors indiqué sur l’arête (lien) entre deux nœuds.</p>
+<p><img src="Image9.png" height=350pxbr><br/>
+<i>Source : Manuel Le Livre Scolaire</i></p>
+<p>Exemple : réaliser le graphe correspondant aux données ci-dessous :</br>
+<img src="Image10.png" height=300px><br/>
+<img src="Image11.png" height=300px></p>
+
+<br/><h3>Algorithme de Dijkstra</h3>
+<p><img src="Diapositive1.png" ></p>
+<p><img src="Diapositive2.png" ></p>
+<p><img src="Diapositive3.png" ></p>
+<p><img src="Diapositive4.png" ></p>
+<p><img src="Diapositive5.png" ></p>
+<p><img src="Diapositive6.png" ></p>
+<p><img src="Diapositive7.png" ></p>
+<p><img src="Diapositive9.png" ></p>
+<p><img src="Diapositive10.png" ></p>
+<p><img src="Diapositive11.png" ></p>
+<p><img src="Diapositive12.png" ></p>
+
+<p><a href="#hautpage" >Haut de page</a></p> 
+
+
+<br/><br/><a id="cart"></a><h2>4. CARTOGRAPHIE</h2>
+<h3>OpenStreetMap et Geoportail</h3>
+<p>Activité 3 pages 84/85 du manuel ?</p>
+
+<br/><h3>Exemples d’applications des cartes numériques</h3>
+<p>Dans les transports :<img src="Image13.png" height=200px class="imageflottante">
+	<ul>
+	<li>Connaître sa position, calculer un itinéraire avec le système GPS</li>
+	<li>Connaître en temps réel la localisation d’un bus de ville</li>
+	<li>Covoiturage instantané et géolocalisé : l’autostop connecté</li>
+	</ul></p>
+<p>Dans le tourisme
+	<ul>
+	<li>Parcours pour randonnées (pédestre, vélo …). Ex : Visorando.<br/>
+	Ex : dans la Somme, un parcours géolocalisé permet de découvrir les sites de mémoire liés à la première guerre mondiale</li>
+	</ul>	</p>
+<p>Pour les secours
+	<ul>	
+	<li>Accéder plus rapidement sur le lieux d’un sinistre grâce à la géolocalisation</li>
+	<li>Dispositif Fralert</li>
+	</ul><img src="Image12.jpg" height=200px class="imageflottante">
+	</p>
+<p>Dans l’agriculture
+	<ul>
+	<li>Cartographie en temps réel des parcelles pour un arrosage au plus juste</li>
+	</ul></p>
+<p>Autres
+	<ul>
+	<li>Les pages jaunes</li>
+	<li>Chercher un hotel, une location …</li>
+	</ul></p>
+
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+
+<br/><br/><a id="page"></a><h2>5. LES ENJEUX DE LA GEOLOCALISATION</h2>
+<p><img src="Image14.png" height=fullscreen></p>
+
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
+ </body>
+</html>

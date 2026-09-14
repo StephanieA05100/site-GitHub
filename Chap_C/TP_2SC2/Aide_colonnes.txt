@@ -1,0 +1,35 @@
+Aide pour creer des colonnes.
+
+Dans le fichier css on definit une grille (grid) et les deux colonnes (col1 et col2):
+.balise{ 					/* contiendra les elements a disposer en "grille" */
+        display: grid; 				/*on active la propriete de la grille css qui permet entre autres, comme ici, de placer differents blocs cote a cote*/
+        grid-template-columns: 30% 70%; 	/* proportion de la largeur disponible sur la page occupee respectivement par les colonnes col1 et col2*/
+        margin-top: 10px; 			/*espace au dessus du div contenant les colonnes col1 et col2*/
+        margin-bottom: 10 px; 			/*espace sous le div contenant les colonnes col1 et col2*/
+    }
+col1{
+        margin-left: 5px; 			/*marge a gauche de la colonne col1*/
+        background-color: lightblue; 		/*couleur de fond de la colonne col1*/
+    }
+col2{
+        order: 4px solid green; 		/* bordure - optionnel */
+        margin-right: 5px; 			/*marge a gauche de la colonne col2*/
+        margin-left: 5px; 			/*marge a gauche de la colonne col2, entre les deux colonnes*/
+        background-color: lightgreen; 		/*couleur de fond de la colonne col2*/
+    }
+On peut evidemment ajouter une colonne, en modifiant le grid, il faut que la somme des largeurs fasse 100%
+
+Dans le fichier html, la ou vous voulez avoir vos colonnes : 
+<div class="balise">
+	<col1>
+		<p>Ici c'est la premiere colonne.<br/>
+		On écrit ce qu'on veut</p>
+		<h4>On peut changer le style</h4>
+		
+    </col1>
+	<col2>
+		<p>Ici c'est la deuxieme colonne.<br/>
+		On peut inserer des liens, des images ...</p>
+		<center><img src="https://cdn-s-www.leprogres.fr/images/874828CB-E173-46BB-AFAC-7417EA853433/FB1200/photo-1509991336.jpg" / height=100></center>
+	</col2>
+</div>

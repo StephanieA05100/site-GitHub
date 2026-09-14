@@ -1,0 +1,162 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: mistyrose; 
+    font-family: Verdana, sans-serif; 
+	color: #682145;
+    font-size: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+h1 {
+    font-size: 150%; 
+    color: #682145; 
+    text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+h2 {
+    font-size: 130%;
+    color: #682145;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+h3 {
+    font-size: 110%;
+    color: #682145;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+p,td,li {
+    font-size: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+    color: deeppurple; 
+}
+ul {
+    font-size: 100%;
+	padding-right: 15px;
+	padding-left: 90px;
+    color: deeppurple; 
+}
+h4 {
+	font-size: 80%;
+	font-style:italic;
+	text-align:center;
+	font-weight:normal;
+}
+h5 {
+	font-size: 60%;
+	font-style:italic;
+	text-align:right;
+	font-weight:normal;
+}
+
+a:link {
+    color: deeppink;
+	text-decoration: none
+}
+a:visited {
+    color: hotpink;
+}
+a:active {
+    color:deeppink;
+}
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+.centrer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rouge {
+color: red;
+}
+#header{
+	height:0 auto;
+	text-align: center;
+	background-color:purple;
+	padding:50px
+}
+.yellow{
+	color:yellow;
+	text-decoration: underline;
+}
+
+.balise{ 									/* contiendra les éléments à disposer en "grille" */
+        display: grid; 						/*on active la propriété de la grille css qui permet entre autres, comme ici, de placer différents blocs côte à côte*/
+        grid-template-columns: 30% 70%; 	/* proportion de la largeur disponible sur la page occupée respectivement par les colonnes col1 et col2*/
+        margin-top: 10px; 					/*espace au dessus du div contenant les colonnes col1 et col2*/
+        margin-bottom: 10 px; 				/*espace sous le div contenant les colonnes col1 et col2*/
+    }
+col1{
+        margin-left: 5px; 					/*marge à gauche de la colonne col1*/
+        background-color: lightblue; 			/*couleur de fond de la colonne col1*/
+    }
+col2{
+        border: 4px solid green; 				/* bordure - optionnel */
+        margin-right: 5px; 					/*marge à gauche de la colonne col2*/
+        margin-left: 5px; 					/*marge à gauche de la colonne col2, entre les deux colonnes*/
+        background-color: lightgreen; 			/*couleur de fond de la colonne col2*/
+    }
+.border {
+  border: 3px solid #ccc;
+  margin:0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 120px 120px;
+    grid-gap: 20px;
+	padding: 20px;
+}
+
+.grid-item {
+    display: flex;
+	font-size: 135%;
+	color:mistyrose;
+    align-items: center;
+    justify-content: center;
+	background-color: #682145;
+	border: 3px solid deeppink;
+	border-radius: 30px;
+	text-align:center;
+}
+nav{
+	margin-left: 1em; /*marge de une fois la longueur de référence à gauche du nav*/
+	background-color: rgb(193,154,116); /*couleur de fond du nav : camel, en rgb (même couleur que )*/
+}
+main{
+	border: 2px solid black; /* bordure pour mieux situer l'élément dans cet exemple */
+	margin-right: 2em; /*marge à droite du main*/
+	margin-left: 2em; /*marge à gauche du main, entre le main et le footer*/
+	padding-left: 6em;
+	padding-right: 6em;
+	padding-bottom: 6em;/*espace laissé entre les éléments contenus dans le main et le bord du main (sauf en haut)*/
+	background-color: #fae9b4; /*la couleur de fond du main est le vert kaki*/
+}
+.grid-container-cours {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 5px;
+	padding: 0px;
+}
+.grid-item-cours {
+    display: flex;
+	font-size: 75%;
+	justify-content: top;
+	text-align:top;
+    align-items: top;
+	border: 1px solid deeppink;
+	border-radius: 30px;
+}
+.imageflottante{
+float: right;
+}

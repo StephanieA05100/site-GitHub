@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>TP 2SC2</title>
+  <link rel="stylesheet" href="../../site.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+ 
+ 
+ <body>
+<a id="haut"></a>
+ <h1>TP 2SC2 – Modifier une page web - le chamois</br>
+ Stéphanie Ader</br>
+ Lycée de la Plaine de l'Ain</h1>
+ 
+ 
+ <div>
+	<h2>I - Modifier un fichier html</h2>
+		<h3>Description du html et du css</h3>
+		<p>1) Lire attentivement l'activité 3 P 62/63</p>
+		<p>2) Si besoin : lire le cours et visionner les vidéos de l'université de Lille, parties 4.1, 4.2, 4.3 en suivant le lien :
+		<a href="https://culturenumerique.univ-lille.fr/module2.html#sec_4" target="_blank"> Lille </a></p>
+<br/>
+		<h3>Chargement et exécution du fichier</h3>
+		<p>1) Dans votre dossier perso (prenom.nom), créez un sous-dossier "chamois".</p>
+		<p>2) Dans ce sous-dossier, enregistrer les deux fichiers suivants en faisant clic droit et "enregistrer la cible du lien sous" : 
+		<a href="Chamois TP_2SC2.html" target="_blank">Chamois html</a> et <a href="Chamois.jpg" target="_blank">Chamois jpeg </a></p>
+		<p>3) Renommez le fichier html en utilisant la convention : Chamois1 - NOM - Prénom.html</p>
+		<p>4) A partir de votre sous-dossier, ouvrez le fichier html dans Mozilla Firefox : observez les styles, le titre de la page, le titre affiché dans l'onglet ...</p>
+		<p>5) Ouvrez le fichier html dans notepad++ ou Geany : le code html apparaît. Repérez le titre de l'onglet et le titre qui apparaît en haut de la page.</p>
+		<p>Nous allons modifier le fichier html. Les modifications se font sur NotePad++ ou Geany. Après chaque modification, enregistrez le fichier et rafraîchissez la fenêtre de Firefox pour voir apparaître les modifications.</p>
+<br/>
+		<h3>Modifier le contenu</h3>
+		<p>1) Sur NotePad++ ou Geany, repérez le titre de l'onglet et le titre qui apparaît en haut de la page. <br/>
+		Corrigez la faute d'orthographe qui apparaît dans le titre de l'onglet.</p>
+		<p>2) Repérez, ligne 22, le code permettant d'afficher l'image. <br/>
+		Modifiez la taille de l'image pour passer sa <strong>largeur</strong> à 300 px</p>
+		<p>3) Observez, ligne 67, le lien hypertexte vers le site externe (adresse du site, texte qui apparaît dans la page). <br/>
+		Ajoutez, en utilisant le même format, une deuxième source : https://www.instinct-animal.fr/chamois/. Le texte à cliquer doit être "instinct-animal.fr"</p>
+		<p>4) Observez bien la liste à puces et ajoutez un prédateur : le lynx</p> 
+		<p>5) Le texte wikipédia est trop compact : après avoir observé l'utilisation des balises p et /p, créez des paragraphes (un pour chaque élément en gras)</p>
+		<p>6) Sur le site ecologie.nature.free.fr, page dédiée au chamois, accédez au code source (clic droit puis "code source de la page"). <br/>
+		Observez le et copiez la partie qui correspond au tableau. Collez la dans votre fichier html, après les sources, sous la ligne "Résumé"</p>
+		<p>7) Ajouter une ligne dans le tableau, indiquant l'habitat du chamois : Zones montagneuses d'Europe et d'Asie</p>
+<br/>
+		<h3>Modifier le style</h3>
+		<p>1) Sur la partie "head" de votre fichier html, observez la ligne 8 : elle définit le style du titre "h1".</p>
+		<p>2) Dans la partie "head", en dessous du style h1, créez le style "h6", en suivant le modèle de "h1" (mais vous ne devez pas effacer ou changer h1) ; il aura les propriétés suivantes :</p>
+		<ul>
+		<li>texte en rouge</li>
+		<li>texte en gras (font-weight :900) et centré (text-align :center)</li>
+		<li>police (font-family en html) en : Monotype Corsiva, cursive</li>
+		<li>taille de police 24px</li>
+		</ul> 
+		<p>3) En dessous du titre général (Présentation du chamois), créez un sous titre contenant vos nom et prénom</p>
+		<p>4) Affectez ce style "h6" au sous titre contenant vos noms (s'inspirer du titre général auquel est affectée le style h1)</p>
+<br/>
+		<h3>Remise du travail</h3>
+		<p>Rendre votre fichier html dans l'ENT, devoirs à faire du jour, Chamois 1</p>
+<br/>
+<br/>
+	<h2>II - Créer et associer un fichier CSS</h2>
+		<h3>Associer un fichier CSS existant</h3>
+		<p>Au préalable, copiez et collez votre fichier html, et changer de nom : Chamois2 - NOM - Prénom.html. Vous travaillerez dorénavant avec ce fichier, pour ne pas modifier le précédent.</p>
+		<p>1) Chargez le fichier css dans votre sous-dossier "Chamois" : <a href="CSS_base.css" target="_blank">CSS</a> </p>
+		<p>2) Renommez le fichier css en utilisant le format : css_NOM_Prénom.css</p>
+		<p>3) Ouvrez ce fichier avec notepad++ ou Geany</p>
+		<p>4) Dans votre fichier html, remplacez la ligne 8 (celle qui définit le style du titre h1) par : <img src="linkrel.jpg" / height=18> en modifiant le nom du fichier css</p>
+		<p>5) Testez - vérifiez que le titre du haut est maintenant au milieu de la page</p>
+<br/>
+		<h3>Ajouter un style présent dans le css</h3>
+		<p>Mettre les sous-titres du document ("Généralités", "Photo", "Prédateurs", "Extraits de la page Wikipédia dédiée au chamois", "Pour en savoir plus", "Résumé") entre des balises h2 et /h2. <br/>
+		Observez : que se passe-t-il ?</p>
+<br/>		
+		<h3>Modifier le fichier CSS</h3/>
+		<p>Apportez les modifications nécessaires au fichier CSS pour que :</p>
+		<ul>
+		<li>le fond du document soit bleu</li>
+		<li>la police utilisée pour tout le document, sauf le tableau, soit URW Chancery L, cursive</li>
+		<li>tout soit écrit en blanc, sauf les titres h1, h2 ...</li>
+		<li>une marge à gauche de 20 px existe sur tout le document</li>
+		<li>le titre général h1 apparaisse en jaune et soit souligné (vous pouvez effectuer une recherche sur internet)</li>
+		<li>le style h2 utilisé pour les sous-titres apparaisse en bleu turquoise (chercher le code hexa sur internet)</li>
+		</ul> 
+<br/>
+		<h3>Remise du travail</h3>
+		<p>Rendre votre fichier html et votre fichier css dans l'ENT, devoirs à faire du jour, Chamois 2</p>
+<br/>
+
+	<h2>II bis - Compléments pour ceux qui sont en avance - aide pour le III</h2>
+	<h3>Créer une balise pour revenir en haut de page depuis un autre endroit de la page</h3>
+		<p>Cliquer sur le lien suivant : <a href="Aide_balise.txt" target="_blank">Aide balise</a> </p>
+		<p>Utiliser cette aide pour insérer dans votre fichier chamois une balise cliquable en fin de page qui vous permettra de revenir en haut de page.<br/>
+		Le rendu sur votre fichier sera le suivant:<br/>
+		<a href="#haut">haut de page</a></p>
+	<h3>Créer un bandeau (pour l'en-tête par exemple)</h3>
+		<p>Cliquer sur le lien suivant : <a href="Aide_bandeau.txt" target="_blank">Aide bandeau</a> </p>
+		<p>Utiliser cette aide pour insérer dans votre fichier chamois un bandeau contenant le titre et votre nom.<br/>
+		Le rendu sur votre fichier sera le suivant:</p>
+		<div id="header">
+		<h1><div class="yellow">Présentation du chamois</div></h1>
+		</div>
+	<h3>Créer deux colonnes</h3>
+		<p>Cliquer sur le lien suivant : <a href="Aide_colonnes.txt" target="_blank">Aide colonnes</a> </p>
+		<p>Utiliser cette aide pour insérer une zone avec deux colonnes dans le fichier chamois.<br/>
+		Le rendu sur votre fichier sera le suivant:</p>
+<div class="balise">
+	<col1>
+		<p>Ici c'est la première colonne.<br/>
+		On écrit ce qu'on veut</p>
+		<h4>On peut changer le style</h4>
+		
+    </col1>
+	<col2>
+		<p>Ici c'est la deuxième colonne.<br/>
+		On peut insérer des liens, des images ...</p>
+		<center><img src="https://cdn-s-www.leprogres.fr/images/874828CB-E173-46BB-AFAC-7417EA853433/FB1200/photo-1509991336.jpg" / height=100></center>
+	</col2>
+</div>
+
+		
+<br/>
+	<h2>III - Travail en groupe : réaliser une page web</h2>
+	<p>Travail sur 2 séances à finir à la maison et à rendre 2 semaines plus tard</p>
+	<p>Par groupe de 2 élèves, choisissez un thème parmi ceux ci-dessous et faites une page web sur ce thème.</p>
+		<ul>
+		<li>un thème lié à la SNT, si possible un thème d'actualité</li>
+		<li>la présentation d'un personnage scientifique connu dans le monde de l'informatique</li>
+		<li>orientation : présentation d'un métier et d'un cursus pour y parvenir</li>
+		</ul> 
+	<p>Les contraintes sont les suivantes :</p>
+		<ul>
+		<li>vous devrez remettre un sous-dossier contenant au minimum un fichier html et un fichier CSS</li>
+		<li>la page doit comporter au moins une image</li>
+		<li>la page doit comporter au moins un tableau</li>
+		<li>la page doit comporter au moins un lien vers un site externe</li>
+		<li>la page doit comporter au moins trois styles différents</li>
+		<li>le travail devra être personnel, le contenu sera pris en compte</li>
+		<li>les sources (des photos, des données) doivent être citées</li>
+		</ul> 
+    <p>Vous pouvez repartir du fichier "chamois" pour vous aider, notamment pour l'entête, mais vous devez ensuite vous en détacher : 
+	la forme sera notée plus que le fond et ce sont les modifications sur la forme qui vous rapporteront des points.</p>
+	<p>Ce travail sera enregistré et fourni au professeur sur clef USB : fournissez bien toutes les données nécessaires (fichier html, css et images).</p>
+	<p>Voici la grille de notation du travail :</p>
+		<img src="notation_site.png" class="centrer" / height=600><br/>
+ </div>
+ </body>
+</html>

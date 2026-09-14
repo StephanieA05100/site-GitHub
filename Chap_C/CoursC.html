@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Cours le Web</title>
+  <link rel="stylesheet" href="../site.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+ 
+ 
+ <body>
+ <a id="hautpage"></a>
+<p><center>TP Sciences Numériques et Technologie</br>
+ Stéphanie Ader</br>
+ Lycée de la Plaine de l'Ain</center> </p>
+<h1>Chapitre C : Le Web</h1>
+<h1>Cours</h1>
+<p><a href="../index.html" >Retour à l'accueil</a></p>
+
+<div class="grid-container-cours">
+
+	<div class="grid-item-cours"><a href="#test"><p>TESTER SES CONNAISSANCES</p></div></a>
+	<div class="grid-item-cours"><a href="#intro"><p>1. INTRODUCTION – DEFINITION</p> 
+		<p>Historique<br/>
+		Définition<br/>
+		Chiffres clefs<<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#fct"><p>2. FONCTIONNEMENT DU WEB</p>
+		<p>Les navigateurs<br/>
+		Le modèle client-serveur<br/>
+		L’URL<br/>
+		Le protocole de communication http<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#mot"><p>3. MOTEURS DE RECHERCHE</p>
+		<p>Les acteurs<br/>
+		Fonctionnement d’un moteur de recherche<br/>
+		Pour bien référencer sa page Web<br/>
+		Tout n’est pas référencé<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#secu"><p>4. SECURITE ET VIE PRIVEE</p>
+		<p>Les cookies<br/>
+		Le droit d’auteur<br/>
+		</p></a></div>
+	<div class="grid-item-cours"><a href="#page"><p>5. CONSTRUCTION D’UNE PAGE WEB</p>
+		<p>Le langage HTML et le CSS<br/>
+		</p></a></div>	
+</div>
+
+<br/><br/><a id="test"></a><h2>TESTER SES CONNAISSANCES</h2>
+<p>Lien vers "Tester ses connaissances" du manuel Delagrave : <a href="http://lienmini.fr/3389-302" target="_blank">lien</a></p>
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="intro"></a><h2>1. INTRODUCTION – DEFINITION</h2>
+<h3>Historique</h3>
+<p>Vidéo Delagrave P58-59 : histoire du Web<br/>
+ <iframe  width="425" height="344" src="http://lienmini.fr/3389-303" frameborder="0" autoplay muted ="1" allowfullscreen ></iframe></p>
+
+<br/><h3>Définition</h3>
+<p><strong>Le Web</strong> est un ensemble de ressources liées entre elles par des liens hypertextes, accessibles en se connectant à Internet.</p>
+<p>Le Web est la partie apparente d’Internet, qui permet de naviguer entre des images, des vidéos et du texte. Si Internet était un musée, 
+le Web désignerait les œuvres qui y sont exposées.</p>
+<p>Un <strong>lien hypertexte</strong> est un élément placé dans le contenu d'une page Web et qui permet, en cliquant dessus, d'accéder à un autre contenu 
+sur le même site Web (lien interne) ou à un site Web différent (lien externe).</p>
+
+
+<br/><h3>Chiffres clefs</h3>
+<p><img src="https://cep-socotic.com/img/actualite/actu-080821.jpg" height=350px><br/>
+Nota : 1,92 en 2022.</p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="fct"></a><h2>2. FONCTIONNEMENT DU WEB</h2>
+<h3>Les navigateurs</h3>
+<p>Pour « surfer » sur le Web, un navigateur est nécessaire. C’est un logiciel permettant d'afficher des sites, télécharger des fichiers et 
+faire des recherches.<br/>
+Ex de navigateur : Mozilla Firefox ; Google Chrome ; Internet Explorer …<br>
+<img src="https://thumbs.dreamstime.com/z/ic%C3%B4ne-navigateur-internet-collection-chrome-saffox-edge-opera-vivaldi-brave-fichier-vectoriel-de-toutes-les-ic%C3%B4nes-du-270442721.jpg" height=200px></p>
+<p>A ne pas confondre avec :
+	<ul>
+	<li>Un FAI ou fournisseur d’accès Internet comme Free, Orange, Bouygues Telecom …</li>
+	<li>Un moteur de recherche comme Google, Qwant, Ecosia …</li>
+	</ul>
+	</p>
+
+
+<br/><h3>Le modèle client-serveur</h3>
+ <iframe  width="425" height="344" src="http://lienmini.fr/3389-304" frameborder="0" autoplay muted ="1" allowfullscreen ></iframe></p>
+
+
+<br/><h3>L’URL</h3>
+<p><img src="Image1.png" height=400px><br/>
+<i>Source manuel Hater-Foucher</i></p>
+<p>Les noms de domaine les plus populaires en 2022 :<br/>
+<img src="https://www.ionos.fr/digitalguide/fileadmin/DigitalGuide/Schaubilder/les-extensions-de-domaines-les-plus-populaires.png" height=300px></p>
+
+<br/><h3>Le protocole de communication http</h3>
+<p>Une <strong>requête http</strong> (HyperText Transfer Protocole) d’un client consiste à soumettre des informations ou des demandes au serveur sur lequel est hébergée une page Web.<br/>
+En retour, le serveur envoie aux clients une réponse http.<br/>
+Ces requêtes et ces réponses sont accompagnées de nombreuses données sur le client et sur les serveurs appelés en-têtes (ou headers).<br/>
+<img src="https://frederic-junier.org/SNT/Theme1_Web/media/schema-requete-http.jpg" height=250px><br/>
+<i>Source F Junier</i></p>
+<p><img src="Image2.png" heught=350px></p>
+<p>L’HyperText Transfer Protocole Secure (<strong>https</strong>) est la version sécurisée de la connexion http.<br/>
+Elle protège les données échangées en ne les rendant compréhensibles que par le destinataire, grâce au protocole TLS (Transport Layer Security) 
+qui chiffre les données.<br/>
+Pour s’assurer que le serveur destinataire est bien celui qu’il prétend, le https authentifie la cible grâce aux certificats SSL (Secure Socket Layer).<br/>
+<img src="Image3.png" height=350px><br/>
+<i>Source : manuel SNT Le Livre Scolaire
+</i></p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+<br/><br/><a id="mot"></a><h2>3. MOTEURS DE RECHERCHE</h2>
+<h3>Les acteurs</h3>
+<p>Vidéo Les chroniques du Dr Nozman<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0A5fQER40Wg?si=R4S7h6nI8KtkmOGD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+<p>Part de marché des moteurs de recherche en 2025 :<br/>
+<img src="Image4b.png" height=300px>  <img src="Image5b.png" height=300px></p>
+
+
+<br/><h3>Fonctionnement d’un moteur de recherche</h3>
+<p><img src="Image6.png" height=350px><br/>
+<i>Source : manuel SNT Le Livre Scolaire
+</i></p>
+<p>L'algorithme de Google: le PageRank :<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sqfgPFJ7T2k?si=yOGhs333ibLD-lrZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+<p><i>Activité PageRank</i></p>
+
+
+<br/><h3>Pour bien référencer sa page Web</h3>
+<p><img src="Image7.png" height=350px><br/>
+<i>Source : manuel SNT Nathan</i></p>
+
+
+<br/><h3>Tout n’est pas référencé</h3>
+<p>Le <strong>web surfacique</strong>, désigne l'ensemble des sites et des pages accessibles via la plupart des moteurs de recherche couramment utilisés.</p> 
+<p>Le <strong>deep web</strong> ou web profond désigne l'ensemble des sites et des pages non indexées sur internet ; c'est-à-dire 
+les contenus qui ne peuvent pas être découverts par la plupart des moteurs de recherche. Il s’agit des pages bloquées par un mot de passe (
+contenus payants, comptes bancaires, emails, etc.), des pages non répertoriées par leurs créateurs, des pages dynamiques ou inaccessibles via 
+l'arborescence du site, ou encore des fragments de données qui ne sont pas indexés dans le cas des pages volumineusesp.</p>
+<p><img src="Image8.png" height=350px><br/>
+<i>Source : futura sciences</i></p>
+
+
+<p><a href="#hautpage" >Haut de page</a></p> 
+
+
+<br/><br/><a id="secu"></a><h2>4. SECURITE ET VIE PRIVEE</h2>
+<h3>Les cookies</h3>
+<p><img src="Image9.png" height=350px></p>
+<p>Vidéo MisterHoodie :<br/>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HfiJ3ME8Tvs?si=lCvIOeaiDmlyN-u9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
+<p>Gestion des cookies :<br/>
+<img src="Image10.png" height=300px></p>
+
+<br/><h3>Le droit d'auteur</h3>
+<p><img src="Image11.png" height=350px></p>
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+
+<br/><br/><a id="page"></a><h2>5. CONSTRUCTION D’UNE PAGE WEB</h2>
+<h3>Le langage HTML et le CSS</h3>
+<p><img src="Image12.png" height=350px><br/>
+<i>Source : manuel SNT Le Livre Scolaire
+</i></p>
+
+
+<p><a href="#hautpage" >Haut de page</a></p>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
+ </body>
+</html>

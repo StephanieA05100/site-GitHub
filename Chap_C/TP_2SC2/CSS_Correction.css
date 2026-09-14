@@ -1,0 +1,38 @@
+html, body {
+    margin-left: 20px;
+    padding: 0;
+}
+body {
+    background-color: blue; 
+    font-family: URW Chancery L; 
+	color:white;
+    font-size: 100%;
+}
+h1 { 
+    font-size:200%;
+	color: yellow; 
+	text-decoration:underline;
+    text-align: center;
+}
+h2 {
+    font-size: 150%;
+    color: #40E0D0;
+    padding-left: 15px;
+}
+p,ul,li,td {
+    color: white; 
+}
+a:link {
+    color: green;
+    text-decoration: underline;
+}
+a:visited {
+    color: gray;
+}
+a:active {
+    color:red;
+}
+a:hover {
+    color: red;
+    text-decoration: none;
+}
