@@ -1,0 +1,63 @@
+a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none; 
+    background-color:rgba(255, 255, 255, 0.2);
+   
+}
+a:hover{
+    color: rgb(255, 0, 0);
+    text-decoration:underline ;
+    
+}
+header{
+    background-color: gray;
+    padding: 25px;
+    height: auto;
+    color: white;
+    background-position: center;
+}
+.header-nav{
+    background-color: rgb(162, 161, 161);
+    padding: 20px 10px 5px;
+    color: rgb(254, 254, 254);
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url(img.html/Tokyo_Manjikai_logo\ \(1\).webp);
+    background-position: center;
+    background-size: 30%;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 15em;
+    list-style: none;
+    
+}
+.main{
+    background-color: rgb(210, 203, 203);
+    font-size: 20px;
+    padding: 20px;
+    background: linear-gradient(#170000, #ff0000);
+}
+body{
+    font-family: "comic sans MS","helvetica", sans-serif;
+    background-color: gray;
+}
+.header-title{
+    background-color: rgb(162, 161, 161);
+    color: rgb(254, 254, 254);
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+}
+.header-bar{
+    width: 100%;
+}   
+img {
+    width: 400px;
+    height: 200px;
+  }

@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 7px;
+}
+body {
+    background-image: url("tecido-tricoline-100-algodao-liso-tricoline-100-algodao-lisa-p199-laranja-claro-p-1677648764100.png");
+    background-size: contain;	
+    font-family: URW Chancery 
+    font-size: 100%;
+	
+}
+h1 {
+    font-size: 200%; 
+    color: yellow; 
+    text-align: center;
+}
+h2 {
+    font-size: 150%;
+    color: cyan;
+    padding-left: 20px;
+}
+p,ul,li,td {
+    color: white; 
+}
+a:link {
+    color: dark blue;
+    text-decoration: underline;
+}
+a:visited {
+    color: purpule;
+}
+a:active {
+    color:dark blue;
+}
+a:hover {
+    color: dark;
+    text-decoration: none;
+}
+
+{<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musique de Fond</title>
+</head>
+<body>
+
+
+    
+
+    <audio autoplay loop>
+        <source src="MartijnSchmit-VacsInTheMorning.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+</body>
+</html>
+}
